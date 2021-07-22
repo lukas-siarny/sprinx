@@ -134,3 +134,6 @@ export default CyclicClick;*/
 /**
  * 9
  */
+// Context služi na zdieľanie dat naprieč komponetami, bez toho, aby som tie data musel predavať cez props každého kompentu
+// teda ak mam komponenty <Context><Child1> <Child2> .... <Child10></Context> .. tak vśetky komponenty obalene v Contexte majú prístup k týmto "globálnym" datam a z komponetu "Child10" sa k nim viem dostať priamo bez toho, aby som si ich posúval cez všetkých 9 nad nimi..
+// ja som to využíval zatiaľ na uloženie témy
