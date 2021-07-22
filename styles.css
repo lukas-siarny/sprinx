@@ -1,0 +1,30 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.link {
+  color: red;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+  padding: 0 10px;
+}
+
+.link::before {
+  position: absolute;
+  left: 0;
+  content: ">";
+  top: 50%;
+  transform: translateY(-50%);
+  color: red;
+}
+
+.link::after {
+  position: absolute;
+  right: 0;
+  content: "<";
+  top: 50%;
+  transform: translateY(-50%);
+  color: red;
+}
